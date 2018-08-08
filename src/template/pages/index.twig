@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% set Title = "Trang chủ" %}
+{% include "../base/_head.twig" %}
+</head>
+
+<body>
+{% block header %}
+{% include "../components/_header.twig" %}
+{% endblock %}
+
+{# {{ block('header')}} #}
+
+{% block footer %}
+{% include "../components/_footer.twig" %}
+{% endblock %}
+
+{% block script %}
+{% include "../base/_script.twig" %}
+{% endblock %}
+
+</body>
+
+</html> 
