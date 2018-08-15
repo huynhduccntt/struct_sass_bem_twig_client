@@ -13,15 +13,13 @@ html {
   }
 }
 body {
-  width: auto;
-  height: auto;
   font-size: 14px;
   color: $black;
   @include html-style;
   font-family: $oswald-font;
-  background-color: $primary-color;
+  background-color: $black;
   display: block;
-  margin : 0px;
+  margin : 0px auto;
   a {
     @include transition();
     &:hover {
