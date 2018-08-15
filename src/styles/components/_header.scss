@@ -2,3 +2,65 @@
 /* 3. Menu Style
 /* =================================== */
 
+.header-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: $white;
+  min-height: 80px;
+  .container {
+    padding-top: 15px;
+    .row {
+      margin: 0px 80px;
+    }
+  }
+  border-bottom: 2px solid #d0cfcd;
+}
+.navbar {
+  position: relative;
+
+  .navbar-nav {
+    background-color: $white;
+  }
+  .navbar-collapse {
+    background-color: $white;
+  }
+}
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0);
+  border: medium none;
+  .navbar-nav > li {
+    display: block;
+    position: relative;
+    > a {
+      text-transform: uppercase;
+      color: $black;
+      font-size: 16px;
+    }
+  }
+}
+
+.nav {
+  &__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px !important;
+    display: block;
+    background-color: #93c3cb;
+    padding: 10px 25px 0px 25px;
+    margin-top: -15px;
+    &--mid {
+      width: 90px;
+      height: 50px;
+    }
+    &__slogan {
+      font-family: $great-font;
+      font-weight: bold;
+      color: $black;
+      text-shadow: none;
+      margin-top: 5px;
+      font-size: 24px;
+    }
+  }
+}
