@@ -4,7 +4,7 @@
 
 html {
   height: 100%;
-
+  -webkit-text-size-adjust: 100%;
   @include html-style;
   @include font-smoothing;
   a {
@@ -13,12 +13,15 @@ html {
   }
 }
 body {
+  width: auto;
+  height: auto;
   font-size: 14px;
   color: $black;
   @include html-style;
   font-family: $oswald-font;
   background-color: $primary-color;
-
+  display: block;
+  margin : 0px;
   a {
     @include transition();
     &:hover {

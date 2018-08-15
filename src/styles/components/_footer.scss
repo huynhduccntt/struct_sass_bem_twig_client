@@ -1,0 +1,33 @@
+/* =================================== */
+/* 3. Menu Style
+/* =================================== */
+
+.app-footer {
+  background-color: #f9f7f1;
+  font-family: $arvo-font;
+  min-height: 77.74px;
+  padding: 1px 0px;
+  font-size: 18px;
+  color: #8b8a87;
+  line-height: 2;
+  &__magin {
+    margin-top: 6px;
+    border-top: 2px solid #8b8a87;
+
+    .container {
+      position: relative;
+      padding-top: 20px;
+      .info {
+        > a {
+          color: #91c1c9;
+          &:hover {
+            color: black;
+          }
+          &:focus {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

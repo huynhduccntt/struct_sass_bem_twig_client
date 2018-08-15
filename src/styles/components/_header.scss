@@ -3,46 +3,29 @@
 /* =================================== */
 
 #header {
-  padding: 0px 0px 0px 0px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  transition: all 0.5s;
-  z-index: 997;
-}
-.main---menu {
-    position: absolute;
-    margin-left : auto ;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    background: white;
-    @include transition();
-}
-@media(max-width:991px){
-    .container.main--menu{
-        max-width:100%!important;
-    }
+  background-color: #61c0e0;
+  text-align: center;
+  position: relative;
 }
 
-// Nav-menu
-.nav-menu,{
-  &--left,
-  &--right {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    &___item {
-    }
-    li {
-      float: left;
-      padding: 0px 10px;
-      a {
-        font-size: 16px;
-        text-transform: uppercase;
-        line-height: 30px;
-      }
-    }
-  }
-}
+// .container {
+//   background-color: #f3d95a;
+//   height: 70px;
+//   &__logo {
+//     display: none;
+//   }
+//   &__navbar {
+//     text-align: center;
+//   }
+// }
+
+// .navbar {
+//       background-color:red;
+
+//   position: relative;
+//   display: inline-block;
+//   min-height: 50px;
+//   margin-bottom: 20px;
+//   border: 1px solid transparent;
+//   }
+
