@@ -3,34 +3,56 @@
     <head>
         {% set Title = "Trang chủ" %}
         {% include "../base/_head.twig" %}
+
     </head>
 
     <body>
+        {# 
+        {% block test %}
+            {% include "../base/_test.twig" %}
+        {% endblock %} #}
+
+        {# ============= #}
+        {% block preload %}
+            {% include "../components/_preload.twig" %}
+        {% endblock %}
         {% block header %}
             {% include "../components/_header.twig" %}
         {% endblock %}
-        {% block banner %}
-            {% include "../components/_banner.twig" %}
-        {% endblock %}
-        {% block content %}
-            {% include "../components/_content.twig" %}
-        {% endblock %}
 
-        {{ block('content')}}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
-        {{ block('content')}}
+        {# {% block banner %}
+            {% include "../components/_banner.twig" %}
+        {% endblock %} #}
+        {% block groom %}
+            {% include "../components/_groom.twig" %}
+        {% endblock %}
+        {% block story %}
+            {% include "../components/_story.twig" %}
+        {% endblock %}
+        {% block dontmiss %}
+            {% include "../components/_dontmiss.twig" %}
+        {% endblock %}
+        {% block bride %}
+            {% include "../components/_bride.twig" %}
+        {% endblock %}
+        {% block gallery %}
+            {% include "../components/_gallery.twig" %}
+        {% endblock %}
+        {% block event %}
+            {% include "../components/_event.twig" %}
+        {% endblock %}
+        {% block black %}
+            {% include "../components/_black.twig" %}
+        {% endblock %}
+        {% block blog %}
+            {% include "../components/_blog.twig" %}
+        {% endblock %}
+        {% block rsvp %}
+            {% include "../components/_rsvp.twig" %}
+        {% endblock %}
+        {% block gift %}
+            {% include "../components/_gift.twig" %}
+        {% endblock %}
 
         {% block footer %}
             {% include "../components/_footer.twig" %}

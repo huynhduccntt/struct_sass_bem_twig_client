@@ -145,3 +145,25 @@
     @content;
   }
 }
+@mixin texthead {
+   &__header {
+    padding-bottom: 50px;
+    &--text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-family: $great-font;
+      text-decoration: double;
+    }
+    &--line {
+      border: 1px solid black;
+      border-top: 1px solid black;
+    }
+    &--line2 {
+      border-top: 1px solid black;
+      margin-top: -18px;
+      margin-left: 170px;
+    }
+  }
+}

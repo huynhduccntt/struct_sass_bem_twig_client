@@ -1,0 +1,31 @@
+.countdown {
+  padding: 50px 0;
+  @include texthead;
+  color: $white;
+  text-align: center;
+  #clock {
+    overflow: hidden;
+    div {
+    }
+  }
+  &__clock-box {
+    margin-left: 12px;
+    div {
+      width: 50px;
+      height: 50px;
+      -moz-border-radius: 25px;
+      -webkit-border-radius: 25px;
+      --border-radius: 25px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.61);
+      float: left;
+      text-align: center;
+      padding: 15px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    span {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.groom {
+  padding: 80px 0;
+
+  &__header {
+    padding-bottom: 50px;
+    &--text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-family: $great-font;
+      text-decoration: double;
+    }
+    &--line {
+      border-top: 1px solid black;
+    }
+    &--line2 {
+      border-top: 1px solid black;
+      margin-top: -18px;
+      margin-left: 170px;
+    }
+  }
+
+  &__top {
+    overflow: hidden;
+    &__image {
+      background-image: url(/assets/images/groom/groom__girl.png);
+      background-size: cover !important;
+      height: 300px;
+      min-height: 300px;
+      float: left;
+      > img {
+        max-width: 100%;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &__content {
+      background: #c5eef5;
+      padding-right: 0;
+      padding-left: 0;
+      height: 300px;
+      min-height: 300px;
+      > h4 {
+        color: #429bab;
+
+        background: #fff;
+        margin: 20px 0px 15px 0px;
+        padding: 5px 0px;
+        padding-left: 100px;
+      }
+      &__head {
+        width: 600px;
+        padding-left: 100px;
+
+        &__date {
+          margin: 10px 0px;
+          color: black;
+        }
+        &__text {
+          color: #757575;
+        }
+        &__social {
+          margin-top: 10px;
+
+          > li {
+            float: left;
+            text-align: center;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 10px;
+    overflow: hidden;
+
+    &__image {
+      background-image: url(/assets/images/groom/groom__boy.png);
+      background-size: cover !important;
+      height: 300px;
+      min-height: 300px;
+      float: right;
+      > img {
+          
+        max-width: 100%;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &__content {
+      background: #c5eef5;
+      padding-right: 0;
+      padding-left: 0;
+      height: 300px;
+      min-height: 300px;
+      > h4 {
+        color: #429bab;
+
+        background: #fff;
+        margin: 20px 0px 15px 0px;
+        padding: 5px 0px;
+        padding-left: 100px;
+      }
+      &__head {
+        width: 600px;
+        padding-left: 100px;
+
+        &__date {
+          margin: 10px 0px;
+          color: black;
+        }
+        &__text {
+          color: #757575;
+        }
+        &__social {
+          margin-top: 10px;
+
+          > li {
+            float: left;
+            text-align: center;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}

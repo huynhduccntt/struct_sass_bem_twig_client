@@ -17,7 +17,7 @@ body {
   color: $black;
   @include html-style;
   font-family: $oswald-font;
-  background-color: $black;
+  background-color: $white;
   display: block;
   margin : 0px auto;
   a {
@@ -108,4 +108,32 @@ button {
   &:focus {
     @include text-decoration;
   }
+}
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #E3AE57;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+a:hover, a:active, a:focus {
+  color: #E3AE57;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

@@ -1,0 +1,35 @@
+.gift {
+  padding: 80px 0;
+
+  &__header {
+    &--text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-family: $great-font;
+      text-decoration: double;
+    }
+    &--line {
+      border-top: 1px solid black;
+    }
+    &--line2 {
+      border-top: 1px solid black;
+      margin-top: -17px;
+      margin-left: 170px;
+    }
+    &--content {
+      margin-bottom: 45px;
+      text-align: center;
+      font-family: $oswald-font;
+    }
+  }
+  &__footer {
+    position: relative;
+    overflow: hidden;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
