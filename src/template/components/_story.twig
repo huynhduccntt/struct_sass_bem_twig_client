@@ -1,15 +1,14 @@
-<section class="story" id="love-story">
+<section class="story-area" id="love-story">
     <div class="container">
-        {# ======= Text header ======== #}
-        <div class="row justify-content-center story__header">
-            <div class="col-lg-6 col-md-6">
-                <h1 class="story__header--text">
-                    Love Story
-                </h1>
-                <hr class="story__header--line" width="30%" size="5px" align="center"/>
-                <hr class="story__header--line2" width="30%" size="5px" align="left"/>
+        {% set Text = "Love Story" %}
+        {% block header %}
+            <div class="row justify-content-center text-center">
+                <span class="element">{{Text}}</span>
+                <hr width="20%" size="3px" align="center"/>
+                <hr class="story-area__line" width="20%" size="3px" align="center"/>
             </div>
-        </div>
+        {% endblock %}
+
         {# ========== Content ============ #}
         {# Picture 1 #}
         <div class="row aligh-items-center justify-content-between story__image">

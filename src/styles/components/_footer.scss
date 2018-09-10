@@ -1,32 +1,72 @@
 /* =================================== */
 /* 3. Menu Style
 /* =================================== */
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+}
 
-.app-footer {
-  background-color: #f9f7f1;
+.back-to-top {
+  visibility: hidden;
+  background-color: #fff;
+  color: #bdc3c7;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+  bottom: 8%;
+  right: 8%;
+  z-index: 90;
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 3px;
+  -webkit-transform: translateZ(0);
+  transition: all 0.4s;
+}
+.footer-area {
+  background: #f9f7f1;
   font-family: $arvo-font;
   min-height: 77.74px;
-  padding: 1px 0px;
   color: #8b8a87;
   line-height: 2;
-  &__magin {
-    margin-top: 6px;
-    border-top: 2px solid #8b8a87;
-
-    .container {
-      position: relative;
-      padding-top: 20px;
-      .info {
-        > a {
-          color: #91c1c9;
-          &:hover {
-            color: black;
-          }
-          &:focus {
-            color: black;
-          }
-        }
-      }
+  padding: 20px 0px;
+  a {
+    &:hover {
+      color: black;
     }
   }
 }
+.row:before,
+.row:after {
+  display: inline-block;
+}
+
+// .app-footer {
+//   background-color: #f9f7f1;
+//   font-family: $arvo-font;
+//   min-height: 77.74px;
+//   padding: 1px 0px;
+//   color: #8b8a87;
+//   line-height: 2;
+//   &__magin {
+//     margin-top: 6px;
+//     border-top: 2px solid #8b8a87;
+
+//     .container {
+//       position: relative;
+//       padding-top: 20px;
+//       .info {
+//         > a {
+//           color: #91c1c9;
+//           &:hover {
+//             color: black;
+//           }
+//           &:focus {
+//             color: black;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

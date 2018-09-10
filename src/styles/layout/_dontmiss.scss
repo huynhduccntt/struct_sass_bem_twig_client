@@ -1,11 +1,18 @@
 .countdown {
+  .row {
+    display: flex;
+    align-items: center;
+  }
   padding: 50px 0;
   @include texthead;
   color: $white;
   text-align: center;
   #clock {
     overflow: hidden;
-    div {
+  }
+  &__header {
+    p {
+      align-items: center;
     }
   }
   &__clock-box {

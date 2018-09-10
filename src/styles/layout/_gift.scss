@@ -1,35 +1,56 @@
 .gift {
-  padding: 80px 0;
+    padding: 80px 0;
+      @extend .groom-area;
+  &__line {
+    margin-top: -18px;
+  }
+  margin: 50px 0px;
+ .hihi {
+            display: flex;
+    align-items: center;
+    }
+   
+    &__footer {
+        >div {
+            margin-top : 20px;
+        }
+    &--logo {
+      position: relative;
+      height: 100px;
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+}
+}
 
-  &__header {
-    &--text {
-      text-align: center;
-      margin-bottom: 20px;
-      font-weight: 400;
-      text-transform: capitalize;
-      font-family: $great-font;
-      text-decoration: double;
-    }
-    &--line {
-      border-top: 1px solid black;
-    }
-    &--line2 {
-      border-top: 1px solid black;
-      margin-top: -17px;
-      margin-left: 170px;
-    }
-    &--content {
-      margin-bottom: 45px;
-      text-align: center;
-      font-family: $oswald-font;
-    }
-  }
-  &__footer {
-    position: relative;
-    overflow: hidden;
-  }
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
+// .gift {
+//   padding: 80px 0;
+
+//   &__header {
+    
+//     &--content {
+//       margin-bottom: 45px;
+//       text-align: center;
+//       font-family: $oswald-font;
+//     }
+// }
+//   &__footer {
+//     &--logo {
+//       position: relative;
+//       height: 100px;
+//       img {
+//         position: absolute;
+//         bottom: 0;
+//       }
+//     }
+  
+// }
+// }
+
+//  .row {
+//             display: flex;
+//     align-items: center;
+//     }

@@ -1,0 +1,31 @@
+.event-area {
+  @extend .groom-area;
+  &__line {
+    margin-top: -18px;
+  }
+  margin: 50px 0px;
+  .colum {
+    span {
+      display: block;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 10px auto;
+      position: relative;
+      background: #f9f7f1;
+      top: -1em;
+      border-radius: 50%;
+    }
+    i {
+      text-align: center;
+      position: relative;
+      top: calc(50% - 10px);
+    }
+    &--box {
+      margin: 20px 0;
+      background: #f1e3bc;
+      text-align: center;
+      min-height: 200px;
+    }
+   
+  }
+}

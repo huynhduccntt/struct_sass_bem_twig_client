@@ -7,22 +7,20 @@
     </head>
 
     <body>
-        {# 
+
         {% block test %}
             {% include "../base/_test.twig" %}
-        {% endblock %} #}
+        {% endblock %}
 
-        {# ============= #}
         {% block preload %}
             {% include "../components/_preload.twig" %}
         {% endblock %}
         {% block header %}
             {% include "../components/_header.twig" %}
         {% endblock %}
-
         {# {% block banner %}
             {% include "../components/_banner.twig" %}
-        {% endblock %} #}
+        {% endblock %}  #}
         {% block groom %}
             {% include "../components/_groom.twig" %}
         {% endblock %}
@@ -44,12 +42,17 @@
         {% block black %}
             {% include "../components/_black.twig" %}
         {% endblock %}
+        {% block rsvp %}
+            {% include "../components/_rsvp.twig" %}
+        {% endblock %}
+        {# 
+      
         {% block blog %}
             {% include "../components/_blog.twig" %}
         {% endblock %}
         {% block rsvp %}
             {% include "../components/_rsvp.twig" %}
-        {% endblock %}
+        {% endblock %} #}
         {% block gift %}
             {% include "../components/_gift.twig" %}
         {% endblock %}

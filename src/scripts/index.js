@@ -1,10 +1,17 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import Router from "react-router-dom/BrowserRouter";
-// import Route from "react-router-dom/Route";
-
-
-// const Transition = () => (
-//     <h1> hey</h1>
-// );
-// ReactDOM.render(<Transition />, document.getElementById("root"));
+// Back to top button
+(function() {
+  $(document).ready(function() {
+    return (
+      $(window).scroll(function() {
+        return $(window).scrollTop() > 600
+          ? $("#back-to-top").addClass("show")
+          : $("#back-to-top").removeClass("show");
+      }),
+      $("#back-to-top").click(function() {
+        return $("html,body").animate({
+          scrollTop: "0"
+        });
+      })
+    );
+  });
+}.call(this));
